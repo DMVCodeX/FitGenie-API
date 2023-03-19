@@ -10,4 +10,6 @@ Rails.application.routes.draw do
   patch "/users/:id" => "users#update"
   patch "users_password/:id" => "users#update_password"
   delete "users/:id" => "users#destroy"
+
+  post "/sessions" => "sessions#create"
 end
