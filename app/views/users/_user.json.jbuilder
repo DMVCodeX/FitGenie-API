@@ -1,5 +1,5 @@
-json.name product.name
-json.email product.email
-json.image_url product.image_url
-json.created_at product.created_at
-json.updated_at? product.updated_at?
+json.name user.name
+json.email user.email
+json.image_url user.image_url
+json.created_at user.created_at
+json.updated_at? user.updated_at?
