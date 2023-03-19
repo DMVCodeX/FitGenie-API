@@ -8,5 +8,6 @@ Rails.application.routes.draw do
   get "/users/:id" => "users#show"
   post "/users" => "users#create"
   patch "/users/:id" => "users#update"
+  patch "users_password/:id" => "users#update_password"
   delete "users/:id" => "users#destroy"
 end

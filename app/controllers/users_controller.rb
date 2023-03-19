@@ -38,6 +38,15 @@ class UsersController < ApplicationController
     render :show
   end
 
+  def update_password
+    @user = User.find_by(id: params[:id])
+    @user.update(
+      password: params[:password],
+      password_confirmation: params[:password_confirmation],
+    )
+    render json: { message: "Password sucessfully updated" }
+  end
+
   def destroy
     @user = User.find_by(id: params[:id])
     @user.destroy
