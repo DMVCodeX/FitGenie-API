@@ -18,13 +18,11 @@ class UsersController < ApplicationController
       image_url: params[:image_url],
     )
 
-    render :show
-
-    # if @user.save
-    #   render json: { message: "User sucessfully created" }, status: :created
-    # else
-    #   render json: { errors: user.errors.full_messages }, status: :bad_request
-    # end
+    if @user.save
+      render json: { message: "User sucessfully created" }, status: :created
+    else
+      render json: { errors: user.errors.full_messages }, status: :bad_request
+    end
   end
 
   def update
@@ -39,5 +37,9 @@ class UsersController < ApplicationController
   end
 
   def destroy
+    @user = User.find_by(id: params[:id])
+    @user.destroy
+
+    render json: { message: "User has been deleted" }
   end
 end
