@@ -6,7 +6,7 @@ class ExercisesController < ApplicationController
   end
 
   def show
-    @exercise = Exercise.find_by(name: params[:name])
+    @exercise = Exercise.find_by(id: params[:id])
 
     render :show
   end

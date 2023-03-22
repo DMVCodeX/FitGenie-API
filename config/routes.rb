@@ -14,5 +14,5 @@ Rails.application.routes.draw do
   post "/sessions" => "sessions#create"
 
   get "/exercises" => "exercises#index"
-  get "/exercises" => "exercises#show"
+  get "/exercises/:id" => "exercises#show"
 end
