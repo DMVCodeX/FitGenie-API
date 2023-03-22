@@ -53,6 +53,6 @@
 #   image_url: "https://images.unsplash.com/photo-1606328500899-38351f33df8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
 # )
 
-# Routine.create(user_id: "1", exercise_id: 3, reps: 5)
-# Routine.create(user_id: "2", exercise_id: 2, reps: 3)
-# Routine.create(user_id: "3", exercise_id: 1, reps: 2)
+# Workout.create(user_id: "1", exercise_id: 3, reps: 5)
+# Workout.create(user_id: "2", exercise_id: 2, reps: 3)
+# Workout.create(user_id: "3", exercise_id: 1, reps: 2)

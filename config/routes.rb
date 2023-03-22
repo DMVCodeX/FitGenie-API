@@ -16,9 +16,9 @@ Rails.application.routes.draw do
   get "/exercises" => "exercises#index"
   get "/exercises/:id" => "exercises#show"
 
-  get "/routines" => "routines#index"
-  get "/routines/:id" => "routines#show"
-  post "/routines" => "routines#create"
-  patch "/routines/:id" => "routines#update"
-  delete "routines/:id" => "routines#destroy"
+  get "/workouts" => "workouts#index"
+  get "/workouts/:id" => "workouts#show"
+  post "/workouts" => "workouts#create"
+  patch "/workouts/:id" => "workouts#update"
+  delete "workouts/:id" => "workouts#destroy"
 end
