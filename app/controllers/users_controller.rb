@@ -14,7 +14,7 @@ class UsersController < ApplicationController
   def create
     @user = User.create(
       name: params[:name],
-      email: params[:email],
+      email: params[:email].downcase,
       image_url: params[:image_url],
       password: params[:password],
       password_confirmation: params[:password_confirmation],
@@ -31,7 +31,7 @@ class UsersController < ApplicationController
     @user = User.find_by(id: params[:id])
     @user.update(
       name: params[:name] || @user.name,
-      email: params[:email] || @user.email,
+      email: params[:email].downcase || @user.email,
       image_url: params[:image_url] || @user.image_url,
     )
 
