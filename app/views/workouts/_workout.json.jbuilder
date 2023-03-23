@@ -1,2 +1,6 @@
-json.extract! workout, :id, :created_at, :updated_at
-json.url workout_url(workout, format: :json)
+json.id json.id
+json.user_id json.user_id
+json.exercise_id json.exercise_id
+json.name json.name
+json.created_at json.created_at
+json.updated_at json.updated_at
