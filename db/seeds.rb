@@ -56,3 +56,23 @@
 # Workout.create(user_id: "1", exercise_id: 3, reps: 5)
 # Workout.create(user_id: "2", exercise_id: 2, reps: 3)
 # Workout.create(user_id: "3", exercise_id: 1, reps: 2)
+
+# Exercise.create(
+#   name: "Bicep Curl",
+#   description: "
+#   1. Stand up straight with your feet shoulder-width apart, and hold a dumbbell in each hand, with your palms facing forward.
+
+#   2. Keep your elbows close to your torso and your upper arms stationary, and slowly raise the dumbbells towards your shoulders, while exhaling.
+
+#   3.Keep your wrists straight and your palms facing up towards your shoulders, and contract your biceps at the top of the movement.
+
+#   4. Hold the contraction for a second, and then slowly lower the dumbbells back down to the starting position, while inhaling.
+
+#   5. Repeat the exercise for the desired number of repetitions, and then switch arms if using one arm at a time.
+
+#   6. Remember to breathe properly throughout the exercise and keep your core engaged to maintain proper form.
+
+#   Note: It's important to start with a light weight and gradually increase the weight as you get stronger, and always warm up your muscles before starting any exercise. If you have any medical conditions or injuries, please consult with a doctor or physical therapist before starting any new exercise routine.",
+#   image_url: "https://images.unsplash.com/photo-1672034181422-feef82d107c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJpY2VwJTIwY3VybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
+#   video_url: "https://www.youtube.com/watch?v=sYV-ki-1blM",
+# )
