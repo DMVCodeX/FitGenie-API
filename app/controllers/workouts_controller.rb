@@ -14,8 +14,6 @@ class WorkoutsController < ApplicationController
       # user_id: params[:user_id],
       user_id: current_user.id,
       name: params[:name],
-      exercise_id: params[:exercise_id],
-      reps: params[:reps],
     )
     render :show
   end
