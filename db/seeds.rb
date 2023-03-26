@@ -77,8 +77,8 @@
 #   video_url: "https://www.youtube.com/watch?v=sYV-ki-1blM",
 # )
 
-WorkoutExercise.create(workout_id: 1, exercise_id: 1, reps: 10)
-WorkoutExercise.create(workout_id: 1, exercise_id: 2, reps: 10)
-WorkoutExercise.create(workout_id: 1, exercise_id: 3, reps: 10)
-WorkoutExercise.create(workout_id: 2, exercise_id: 5, reps: 10)
-WorkoutExercise.create(workout_id: 5, exercise_id: 4, reps: 0)
+# WorkoutExercise.create(workout_id: 1, exercise_id: 1, reps: 10)
+# WorkoutExercise.create(workout_id: 1, exercise_id: 2, reps: 10)
+# WorkoutExercise.create(workout_id: 1, exercise_id: 3, reps: 10)
+# WorkoutExercise.create(workout_id: 2, exercise_id: 5, reps: 10)
+# WorkoutExercise.create(workout_id: 5, exercise_id: 4, reps: 0)
