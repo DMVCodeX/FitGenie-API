@@ -76,3 +76,5 @@
 #   image_url: "https://images.unsplash.com/photo-1672034181422-feef82d107c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJpY2VwJTIwY3VybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
 #   video_url: "https://www.youtube.com/watch?v=sYV-ki-1blM",
 # )
+
+WorkoutExercises.create(name: "Leg Day", user_id: 1)
