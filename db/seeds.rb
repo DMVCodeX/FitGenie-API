@@ -83,20 +83,38 @@
 # WorkoutExercise.create(workout_id: 2, exercise_id: 5, reps: 10)
 # WorkoutExercise.create(workout_id: 5, exercise_id: 4, reps: 0)
 
+# Exercise.create(
+#   name: "Stair Master",
+#   description: "
+# 1. Warm up: Start with a five-minute warm-up on the stair master at a moderate pace.
+
+# 2. Intervals: Increase the intensity of the stair master for a set period, such as 30 seconds to one minute. Then, decrease the intensity and recover for the same amount of time or longer, such as one to two minutes.
+
+# 3. Repeat: Repeat the high-intensity interval and recovery for a set number of repetitions, such as 8 to 10.
+
+# 4. Cool down: End the workout with a five-minute cool down on the stair master at a slower pace.
+
+# 5. Progression: As you get stronger, you can increase the intensity of the intervals or decrease the recovery time to make the workout more challenging.
+
+# Notes: It's important to listen to your body and not push yourself too hard. Always consult with a healthcare professional before starting any new exercise program.",
+#   image_url: "https://media.istockphoto.com/id/1313698945/photo/sexy-fit-woman-in-sports-clothes-doing-cardio-exercise-on-steps-exercise-machine-in-modern.jpg?b=1&s=170667a&w=0&k=20&c=DjHlxNpFbnCEuWPwRzrfWn51QFkUol5VdSVOdATPKmU=",
+#   video_url: "https://www.youtube.com/watch?v=oGOTjSt1F0o",
+# )
+
 Exercise.create(
-  name: "Stair Master",
+  name: "Sit Ups",
   description: "
-1. Warm up: Start with a five-minute warm-up on the stair master at a moderate pace.
+1. Warm-up: Begin with 5-10 minutes of light cardio, such as walking, jogging, or jumping jacks, to get your heart rate up and your muscles warm.
 
-2. Intervals: Increase the intensity of the stair master for a set period, such as 30 seconds to one minute. Then, decrease the intensity and recover for the same amount of time or longer, such as one to two minutes.
-  
-3. Repeat: Repeat the high-intensity interval and recovery for a set number of repetitions, such as 8 to 10.
-  
-4. Cool down: End the workout with a five-minute cool down on the stair master at a slower pace.
+2. Basic sit-ups: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head or across your chest. Slowly raise your head, shoulders, and upper back off the ground, using your abs to lift your body. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.
 
-5. Progression: As you get stronger, you can increase the intensity of the intervals or decrease the recovery time to make the workout more challenging.
+3. Bicycle crunches: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head and lift your head, shoulders, and upper back off the ground. Bring your left elbow towards your right knee while extending your left leg out straight, then switch sides and bring your right elbow towards your left knee while extending your right leg out straight. Continue alternating sides for 2 sets of 10-12 reps.
 
-Notes: It's important to listen to your body and not push yourself too hard. Always consult with a healthcare professional before starting any new exercise program.",
-  image_url: "https://media.istockphoto.com/id/1313698945/photo/sexy-fit-woman-in-sports-clothes-doing-cardio-exercise-on-steps-exercise-machine-in-modern.jpg?b=1&s=170667a&w=0&k=20&c=DjHlxNpFbnCEuWPwRzrfWn51QFkUol5VdSVOdATPKmU=",
-  video_url: "https://www.youtube.com/watch?v=oGOTjSt1F0o",
+4. Russian twists: Sit on the ground with your knees bent and feet flat on the floor. Lean back slightly and lift your feet off the ground, balancing on your sit bones. Hold a weight or medicine ball in front of your chest and twist your torso to the right, tapping the weight on the ground next to your hip. Twist back to center, then repeat on the left side. Do 2 sets of 10-12 reps on each side.
+
+5. Reverse crunches: Lie on your back with your hands at your sides and your legs straight up in the air, perpendicular to the ground. Use your lower abs to lift your hips off the ground, rolling your legs towards your head. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.
+
+6 .Cool down: Finish with some light stretching for your abs and back.",
+  image_url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+  video_url: "https://www.youtube.com/watch?v=jDwoBqPH0jk",
 )
