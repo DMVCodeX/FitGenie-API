@@ -6,8 +6,11 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find_by(id: params[:id])
-
+    if params[:id] == "current"
+      @user = current_user
+    else
+      @user = User.find_by(id: params[:id])
+    end
     render :show
   end
 

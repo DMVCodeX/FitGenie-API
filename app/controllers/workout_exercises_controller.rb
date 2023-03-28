@@ -33,7 +33,7 @@ class WorkoutExercisesController < ApplicationController
     def destroy
       @workout_exercise = WorkoutExercise.find_by(id: params[:id])
       @workout_exercise.destroy
-      render json: { message: "Workout Routine deleted" }
+      render json: { message: "Workout Exercise deleted" }
     end
   end
 end
