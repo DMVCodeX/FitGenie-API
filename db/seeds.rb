@@ -116,6 +116,6 @@
 # 6 .Cool down: Finish with some light stretching for your abs and back.",
 #   image_url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
 #   video_url: "https://www.youtube.com/watch?v=jDwoBqPH0jk",
-# )
+# # )
 
-WorkoutExercise.create(workout_id: 5, exercise_id: 6, reps: 0)
+# WorkoutExercise.create(workout_id: 5, exercise_id: 6, reps: 0)
