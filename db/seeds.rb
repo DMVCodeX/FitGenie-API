@@ -82,3 +82,21 @@
 # WorkoutExercise.create(workout_id: 1, exercise_id: 3, reps: 10)
 # WorkoutExercise.create(workout_id: 2, exercise_id: 5, reps: 10)
 # WorkoutExercise.create(workout_id: 5, exercise_id: 4, reps: 0)
+
+Exercise.create(
+  name: "Stair Master",
+  description: "
+1. Warm up: Start with a five-minute warm-up on the stair master at a moderate pace.
+
+2. Intervals: Increase the intensity of the stair master for a set period, such as 30 seconds to one minute. Then, decrease the intensity and recover for the same amount of time or longer, such as one to two minutes.
+  
+3. Repeat: Repeat the high-intensity interval and recovery for a set number of repetitions, such as 8 to 10.
+  
+4. Cool down: End the workout with a five-minute cool down on the stair master at a slower pace.
+
+5. Progression: As you get stronger, you can increase the intensity of the intervals or decrease the recovery time to make the workout more challenging.
+
+Notes: It's important to listen to your body and not push yourself too hard. Always consult with a healthcare professional before starting any new exercise program.",
+  image_url: "https://media.istockphoto.com/id/1313698945/photo/sexy-fit-woman-in-sports-clothes-doing-cardio-exercise-on-steps-exercise-machine-in-modern.jpg?b=1&s=170667a&w=0&k=20&c=DjHlxNpFbnCEuWPwRzrfWn51QFkUol5VdSVOdATPKmU=",
+  video_url: "https://www.youtube.com/watch?v=oGOTjSt1F0o",
+)
