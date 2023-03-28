@@ -77,7 +77,6 @@
 #   video_url: "https://www.youtube.com/watch?v=sYV-ki-1blM",
 # )
 
-# WorkoutExercise.create(workout_id: 1, exercise_id: 1, reps: 10)
 # WorkoutExercise.create(workout_id: 1, exercise_id: 2, reps: 10)
 # WorkoutExercise.create(workout_id: 1, exercise_id: 3, reps: 10)
 # WorkoutExercise.create(workout_id: 2, exercise_id: 5, reps: 10)
@@ -101,20 +100,22 @@
 #   video_url: "https://www.youtube.com/watch?v=oGOTjSt1F0o",
 # )
 
-Exercise.create(
-  name: "Sit Ups",
-  description: "
-1. Warm-up: Begin with 5-10 minutes of light cardio, such as walking, jogging, or jumping jacks, to get your heart rate up and your muscles warm.
+# Exercise.create(
+#   name: "Sit Ups",
+#   description: "
+# 1. Warm-up: Begin with 5-10 minutes of light cardio, such as walking, jogging, or jumping jacks, to get your heart rate up and your muscles warm.
 
-2. Basic sit-ups: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head or across your chest. Slowly raise your head, shoulders, and upper back off the ground, using your abs to lift your body. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.
+# 2. Basic sit-ups: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head or across your chest. Slowly raise your head, shoulders, and upper back off the ground, using your abs to lift your body. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.
 
-3. Bicycle crunches: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head and lift your head, shoulders, and upper back off the ground. Bring your left elbow towards your right knee while extending your left leg out straight, then switch sides and bring your right elbow towards your left knee while extending your right leg out straight. Continue alternating sides for 2 sets of 10-12 reps.
+# 3. Bicycle crunches: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head and lift your head, shoulders, and upper back off the ground. Bring your left elbow towards your right knee while extending your left leg out straight, then switch sides and bring your right elbow towards your left knee while extending your right leg out straight. Continue alternating sides for 2 sets of 10-12 reps.
 
-4. Russian twists: Sit on the ground with your knees bent and feet flat on the floor. Lean back slightly and lift your feet off the ground, balancing on your sit bones. Hold a weight or medicine ball in front of your chest and twist your torso to the right, tapping the weight on the ground next to your hip. Twist back to center, then repeat on the left side. Do 2 sets of 10-12 reps on each side.
+# 4. Russian twists: Sit on the ground with your knees bent and feet flat on the floor. Lean back slightly and lift your feet off the ground, balancing on your sit bones. Hold a weight or medicine ball in front of your chest and twist your torso to the right, tapping the weight on the ground next to your hip. Twist back to center, then repeat on the left side. Do 2 sets of 10-12 reps on each side.
 
-5. Reverse crunches: Lie on your back with your hands at your sides and your legs straight up in the air, perpendicular to the ground. Use your lower abs to lift your hips off the ground, rolling your legs towards your head. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.
+# 5. Reverse crunches: Lie on your back with your hands at your sides and your legs straight up in the air, perpendicular to the ground. Use your lower abs to lift your hips off the ground, rolling your legs towards your head. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.
 
-6 .Cool down: Finish with some light stretching for your abs and back.",
-  image_url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-  video_url: "https://www.youtube.com/watch?v=jDwoBqPH0jk",
-)
+# 6 .Cool down: Finish with some light stretching for your abs and back.",
+#   image_url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
+#   video_url: "https://www.youtube.com/watch?v=jDwoBqPH0jk",
+# )
+
+WorkoutExercise.create(workout_id: 5, exercise_id: 6, reps: 0)
