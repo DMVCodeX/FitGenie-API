@@ -1,121 +1,43 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+User.create!([
+  { name: "Justin", email: "justin@test.com", image_url: "https://media.licdn.com/dms/image/C4E03AQHnyz3lrzPvgw/profile-displayphoto-shrink_200_200/0/1644971769158?e=1684972800&v=beta&t=bJXXnLq7YmseVyOCHzEetGjm5H8SjXD1GhgqWqWllWs", password_digest: "$2a$12$XA.VOSJBnRWMXCnG1hU0buIcn08SsukRx6s3p4l7xbMz0zwqwdU9O" },
+  { name: "Yoda", email: "yoda@test.com", image_url: "https://images.unsplash.com/photo-1598400043781-17133e94528f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8eW9kYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60", password_digest: "$2a$12$CzaNgkrX2QTp7dsVCNC00.kYJtjr3t.gox3dVpIbbpwqvADyBJEmu" },
+  { name: "Lisa", email: "lisa@test.com", image_url: "https://media.licdn.com/dms/image/D4E03AQGQSU09-Y3MyQ/profile-displayphoto-shrink_200_200/0/1678224139255?e=1684972800&v=beta&t=GcLzAZPfhPhiBTaSTABdYvVscfgfheHqkyRAyYFlmqw", password_digest: "$2a$12$O3Gv1.QnkMRROXD21H2VK.UNlejr9kTN8WP/y7fzHFEhrc7XORvIa" },
+  { name: "Diane", email: "diane@test.com", image_url: "https://avatars.githubusercontent.com/u/122197490?v=4", password_digest: "$2a$12$YWYoNq7/UdsUU3Sq034yAO3CmiBS0iGDC0vlsQLNOtVbE6Hlmpr6O" },
+  { name: "Katherine", email: "katherine@test.com", image_url: "https://media.licdn.com/dms/image/D5603AQFZ9OS7WdEG2Q/profile-displayphoto-shrink_100_100/0/1682113410830?e=1688601600&v=beta&t=ebahhiclx8Y1I9Wz6XnUqtLCOKtvxwS8zonH3jP9Snw", password_digest: "$2a$12$guDO7/N7MCZ1YnU0CQBKRO/1I1mVaIgqJA1URNEIJerFIPfMMJiPm" },
 
-# User.create(name: "Diane", email: "Diane@test.com", image_url: "https://avatars.githubusercontent.com/u/122197490?v=4")
-# User.create(name: "Peter", email: "Peter@test.com", image_url: "https://avatars.githubusercontent.com/u/8083350?v=4")
-# User.create(name: "Jose", email: "Jose@test.com", image_url: "https://avatars.githubusercontent.com/u/116036287?v=4")
+  { name: "David", email: "david@test.com", image_url: nil, password_digest: "$2a$12$.HZowWtxhq8oCGSZU2s4y.8jR72dxUGCW6Oai5qK0IJpX6Y.zyfPS" },
+  { name: "Jared", email: "jared@test.com", image_url: "https://media.licdn.com/dms/image/C5603AQFg99k2URg9vg/profile-displayphoto-shrink_100_100/0/1605024566021?e=1684972800&v=beta&t=3g3BTYA51enJnTEoU8ZmnHI8ryUa6ka_hM-WlvPda-0", password_digest: "$2a$12$f5vM9wGFVvmgN5W4qj9si./BLoNSTEZ3MlJTSEb8SYym0wWe8B.bC" },
+  { name: "Jose", email: "jose@test.com", image_url: "https://avatars.githubusercontent.com/u/116036287?v=4", password_digest: "$2a$12$Xs5Gm3TiiXYDdPIhP0ocvey/Zg0VhyfkVreZXAQZqsXtcRc/s8xjC" },
+  { name: "Peter", email: "peter@test.com", image_url: "https://avatars.githubusercontent.com/u/8083350?v=4", password_digest: "$2a$12$zCWsmR2W3l8z6O6sCNn.WueedtV/XSwinV2gLJPO9o5s69JLiRWv2" },
+])
 
-# Exercise.create(
-#   name: "Squat",
-#   description: "
-#   1. Stand with your feet slightly wider than shoulder-width apart, toes pointing forward or slightly outward.
-#   2. Engage your core and keep your chest up and your shoulders back.
-#   3. Lower your hips back and down as if you were sitting in a chair, keeping your weight on your heels and your knees behind your toes.
-#   4. Keep lowering until your thighs are parallel to the ground, or as low as you can go while maintaining proper form.
-#   5. Push through your heels and use your glutes and thighs to return to standing position.
-#   6. Repeat for desired number of reps.
+Exercise.create!([
+  { name: "Lunge", description: "\n1. Start by standing up straight with your feet shoulder-width apart and your hands on your hips.\n\n2. Take a big step forward with one foot and lower your body until your back knee is just above the ground and your front thigh is parallel to the ground.\n\n3. Keep your front knee directly above your ankle and your back knee pointing down towards the ground.\n\n4. Push back up through your front heel and return to your starting position.\n\n5. Repeat with the other leg, stepping forward and lunging down until your back knee is just above the ground.\n\n6. Alternate legs and repeat for desired number of reps.\n  \nNotes: Remember to maintain good posture throughout the exercise, engaging your core and keeping your back straight. It's important to start with a weight that is comfortable and to gradually increase the weight as you become stronger.", image_url: "https://images.unsplash.com/photo-1609899517237-77d357b047cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3F1YXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60", video_url: "https://www.youtube.com/watch?v=tTej-ax9XiA", reps: "10" },
+  { name: "Treadmill", description: "1. Begin with a warm-up of 5-10 minutes at a moderate pace.\n\n2. Increase the speed to a challenging pace for 30 seconds to 1 minute, followed by a recovery period of 30 seconds to 1 minute at a slower pace.\n\n3. Repeat the high-intensity intervals followed by recovery periods for 10-20 minutes, depending on your fitness level.\n\n4. Cool down with 5-10 minutes of easy walking or jogging at a slow pace.\n\n5. Stretch your muscles to prevent soreness and improve flexibility.\n\n6. Gradually increase the duration and intensity of your intervals as your fitness level improves.\n\nNotes: Remember to listen to your body and adjust the intensity and duration of your workout to suit your fitness level and goals.", image_url: "https://media.istockphoto.com/id/1050417204/photo/beautiful-attractive-woman-runs-on-the-running-track.jpg?s=612x612&w=0&k=20&c=qBEkJznWcSPE3bE7Xtwnxejq2iYRCgY8dLmthLBqnOw=", video_url: "https://www.youtube.com/watch?v=K6I24WgiiPw", reps: "1" },
+  { name: "Squat", description: "\n1. Stand with your feet slightly wider than shoulder-width apart, toes pointing forward or slightly outward.\n  \n2. Engage your core and keep your chest up and your shoulders back.\n \n3. Lower your hips back and down as if you were sitting in a chair, keeping your weight on your heels and your knees behind your toes.\n \n4. Keep lowering until your thighs are parallel to the ground, or as low as you can go while maintaining proper form.\n\n5. Push through your heels and use your glutes and thighs to return to standing position.\n \n6. Repeat for desired number of reps.\n\n Notes: Remember to start with a weight that you can comfortably lift and to gradually increase the weight as you become stronger. It's important to maintain proper form throughout the exercise to avoid injury and to maximize the benefits of the exercise.", image_url: "https://images.unsplash.com/photo-1609899494145-417d7327ea9e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60", video_url: "https://www.youtube.com/watch?v=xqvCmoLULNY", reps: "12" },
+  { name: "Bicep Curl", description: "\n1. Stand up straight with your feet shoulder-width apart, and hold a dumbbell in each hand, with your palms facing forward.\n\n2. Keep your elbows close to your torso and your upper arms stationary, and slowly raise the dumbbells towards your shoulders, while exhaling.\n\n3.Keep your wrists straight and your palms facing up towards your shoulders, and contract your biceps at the top of the movement.\n\n4. Hold the contraction for a second, and then slowly lower the dumbbells back down to the starting position, while inhaling.\n\n5. Repeat the exercise for the desired number of repetitions, and then switch arms if using one arm at a time.\n\n6. Remember to breathe properly throughout the exercise and keep your core engaged to maintain proper form.\n\nNote: It's important to start with a light weight and gradually increase the weight as you get stronger, and always warm up your muscles before starting any exercise. If you have any medical conditions or injuries, please consult with a doctor or physical therapist before starting any new exercise routine.", image_url: "https://images.unsplash.com/photo-1598267416826-c0d275951803?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YmljZXAlMjBjdXJsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60", video_url: "https://www.youtube.com/watch?v=sYV-ki-1blM", reps: "12" },
+  { name: "Deadlift", description: "\n1. Stand with your feet shoulder-width apart and your toes pointed forward or slightly outward.\n\n2. Place your hands on the barbell, with your palms facing down and your hands slightly wider than shoulder-width apart.\n\n3. Bend your knees and lower your hips until your shins touch the bar, while keeping your back straight and your chest up.\n\n4. Take a deep breath, engage your core, and lift the bar by driving through your heels and straightening your legs. Keep the bar close to your body as you lift.\n\n5. As the bar passes your knees, pull your shoulders back and bring your hips forward until you are standing upright with the bar held in front of your thighs.\n\n6. Slowly lower the bar back down by bending at your hips and knees, keeping your back straight and the bar close to your body.\n\n7. Repeat for desired number of reps.\n  \nNotes: Remember to start with a weight that you can comfortably lift and to gradually increase the weight as you become stronger. It's important to maintain proper form throughout the exercise to avoid injury and to maximize the benefits of the exercise.", image_url: "https://images.unsplash.com/photo-1595078475328-1ab05d0a6a0e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8d2VpZ2h0JTIwbGlmdGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60", video_url: "https://www.youtube.com/watch?v=1ZXobu7JvvE", reps: "10" },
+  { name: "Stair Master", description: "\n1. Warm up: Start with a five-minute warm-up on the stair master at a moderate pace.\n\n2. Intervals: Increase the intensity of the stair master for a set period, such as 30 seconds to one minute. Then, decrease the intensity and recover for the same amount of time or longer, such as one to two minutes.\n  \n3. Repeat: Repeat the high-intensity interval and recovery for a set number of repetitions, such as 8 to 10.\n  \n4. Cool down: End the workout with a five-minute cool down on the stair master at a slower pace.\n\n5. Progression: As you get stronger, you can increase the intensity of the intervals or decrease the recovery time to make the workout more challenging.\n\nNotes: It's important to listen to your body and not push yourself too hard. Always consult with a healthcare professional before starting any new exercise program.", image_url: "https://media.istockphoto.com/id/1217829045/photo/full-length-of-fit-young-female-working-out-on-stair-climbing-machine.jpg?s=612x612&w=0&k=20&c=Hl6wvL2FYtci4UOkeD7NFlwy-rdG58S1k6_Yf_xQHTk=", video_url: "https://www.youtube.com/watch?v=oGOTjSt1F0o", reps: "1" },
+  { name: "Sit Ups", description: "\n1. Warm-up: Begin with 5-10 minutes of light cardio, such as walking, jogging, or jumping jacks, to get your heart rate up and your muscles warm.\n\n2. Basic sit-ups: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head or across your chest. Slowly raise your head, shoulders, and upper back off the ground, using your abs to lift your body. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.\n\n3. Bicycle crunches: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head and lift your head, shoulders, and upper back off the ground. Bring your left elbow towards your right knee while extending your left leg out straight, then switch sides and bring your right elbow towards your left knee while extending your right leg out straight. Continue alternating sides for 2 sets of 10-12 reps.\n\n4. Russian twists: Sit on the ground with your knees bent and feet flat on the floor. Lean back slightly and lift your feet off the ground, balancing on your sit bones. Hold a weight or medicine ball in front of your chest and twist your torso to the right, tapping the weight on the ground next to your hip. Twist back to center, then repeat on the left side. Do 2 sets of 10-12 reps on each side.\n\n5. Reverse crunches: Lie on your back with your hands at your sides and your legs straight up in the air, perpendicular to the ground. Use your lower abs to lift your hips off the ground, rolling your legs towards your head. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.\n\n6 .Cool down: Finish with some light stretching for your abs and back.", image_url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60", video_url: "https://www.youtube.com/watch?v=jDwoBqPH0jk", reps: "12" },
+])
 
-#   Notes: Remember to start with a weight that you can comfortably lift and to gradually increase the weight as you become stronger. It's important to maintain proper form throughout the exercise to avoid injury and to maximize the benefits of the exercise.",
-#   image_url: "https://images.unsplash.com/photo-1574680178050-55c6a6a96e0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3F1YXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-# )
+Workout.create!([
+  { name: "Leg Day", user_id: 2 },
+  { name: "Leg Day", user_id: 5 },
+  { name: "Leg Day", user_id: 1 },
+  { name: "Arm Day", user_id: 1 },
+  { name: "Cardio Day", user_id: 1 },
+  { name: "Leg Day", user_id: 4 },
+  { name: "Leg Day", user_id: 3 },
+  { name: "Abs Day", user_id: 1 },
+])
 
-# Exercise.create(
-#   name: "Lunge",
-#   description: "
-#   1. Start by standing up straight with your feet shoulder-width apart and your hands on your hips.
-#   2. Take a big step forward with one foot and lower your body until your back knee is just above the ground and your front thigh is parallel to the ground.
-#   3. Keep your front knee directly above your ankle and your back knee pointing down towards the ground.
-#   4. Push back up through your front heel and return to your starting position.
-#   5. Repeat with the other leg, stepping forward and lunging down until your back knee is just above the ground.
-#   6. Alternate legs and repeat for desired number of reps.
-
-#   Notes: Remember to maintain good posture throughout the exercise, engaging your core and keeping your back straight. It's important to start with a weight that is comfortable and to gradually increase the weight as you become stronger.",
-#   image_url: "https://images.unsplash.com/photo-1609899517237-77d357b047cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3F1YXR8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
-# )
-
-# Exercise.create(
-#   name: "Deadlift",
-#   description: "
-#   1. Stand with your feet shoulder-width apart and your toes pointed forward or slightly outward.
-#   2. Place your hands on the barbell, with your palms facing down and your hands slightly wider than shoulder-width apart.
-#   3. Bend your knees and lower your hips until your shins touch the bar, while keeping your back straight and your chest up.
-#   4. Take a deep breath, engage your core, and lift the bar by driving through your heels and straightening your legs. Keep the bar close to your body as you lift.
-#   5. As the bar passes your knees, pull your shoulders back and bring your hips forward until you are standing upright with the bar held in front of your thighs.
-#   6. Slowly lower the bar back down by bending at your hips and knees, keeping your back straight and the bar close to your body.
-#   7. Repeat for desired number of reps.
-
-#   Notes: Remember to start with a weight that you can comfortably lift and to gradually increase the weight as you become stronger. It's important to maintain proper form throughout the exercise to avoid injury and to maximize the benefits of the exercise.",
-#   image_url: "https://images.unsplash.com/photo-1606328500899-38351f33df8a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTZ8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-# )
-
-# Workout.create(user_id: "1", exercise_id: 3, reps: 5)
-# Workout.create(user_id: "2", exercise_id: 2, reps: 3)
-# Workout.create(user_id: "3", exercise_id: 1, reps: 2)
-
-# Exercise.create(
-#   name: "Bicep Curl",
-#   description: "
-#   1. Stand up straight with your feet shoulder-width apart, and hold a dumbbell in each hand, with your palms facing forward.
-
-#   2. Keep your elbows close to your torso and your upper arms stationary, and slowly raise the dumbbells towards your shoulders, while exhaling.
-
-#   3.Keep your wrists straight and your palms facing up towards your shoulders, and contract your biceps at the top of the movement.
-
-#   4. Hold the contraction for a second, and then slowly lower the dumbbells back down to the starting position, while inhaling.
-
-#   5. Repeat the exercise for the desired number of repetitions, and then switch arms if using one arm at a time.
-
-#   6. Remember to breathe properly throughout the exercise and keep your core engaged to maintain proper form.
-
-#   Note: It's important to start with a light weight and gradually increase the weight as you get stronger, and always warm up your muscles before starting any exercise. If you have any medical conditions or injuries, please consult with a doctor or physical therapist before starting any new exercise routine.",
-#   image_url: "https://images.unsplash.com/photo-1672034181422-feef82d107c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJpY2VwJTIwY3VybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-#   video_url: "https://www.youtube.com/watch?v=sYV-ki-1blM",
-# )
-
-# WorkoutExercise.create(workout_id: 1, exercise_id: 2, reps: 10)
-# WorkoutExercise.create(workout_id: 1, exercise_id: 3, reps: 10)
-# WorkoutExercise.create(workout_id: 2, exercise_id: 5, reps: 10)
-# WorkoutExercise.create(workout_id: 5, exercise_id: 4, reps: 0)
-
-# Exercise.create(
-#   name: "Stair Master",
-#   description: "
-# 1. Warm up: Start with a five-minute warm-up on the stair master at a moderate pace.
-
-# 2. Intervals: Increase the intensity of the stair master for a set period, such as 30 seconds to one minute. Then, decrease the intensity and recover for the same amount of time or longer, such as one to two minutes.
-
-# 3. Repeat: Repeat the high-intensity interval and recovery for a set number of repetitions, such as 8 to 10.
-
-# 4. Cool down: End the workout with a five-minute cool down on the stair master at a slower pace.
-
-# 5. Progression: As you get stronger, you can increase the intensity of the intervals or decrease the recovery time to make the workout more challenging.
-
-# Notes: It's important to listen to your body and not push yourself too hard. Always consult with a healthcare professional before starting any new exercise program.",
-#   image_url: "https://media.istockphoto.com/id/1313698945/photo/sexy-fit-woman-in-sports-clothes-doing-cardio-exercise-on-steps-exercise-machine-in-modern.jpg?b=1&s=170667a&w=0&k=20&c=DjHlxNpFbnCEuWPwRzrfWn51QFkUol5VdSVOdATPKmU=",
-#   video_url: "https://www.youtube.com/watch?v=oGOTjSt1F0o",
-# )
-
-# Exercise.create(
-#   name: "Sit Ups",
-#   description: "
-# 1. Warm-up: Begin with 5-10 minutes of light cardio, such as walking, jogging, or jumping jacks, to get your heart rate up and your muscles warm.
-
-# 2. Basic sit-ups: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head or across your chest. Slowly raise your head, shoulders, and upper back off the ground, using your abs to lift your body. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.
-
-# 3. Bicycle crunches: Lie on your back with your knees bent and feet flat on the floor. Place your hands behind your head and lift your head, shoulders, and upper back off the ground. Bring your left elbow towards your right knee while extending your left leg out straight, then switch sides and bring your right elbow towards your left knee while extending your right leg out straight. Continue alternating sides for 2 sets of 10-12 reps.
-
-# 4. Russian twists: Sit on the ground with your knees bent and feet flat on the floor. Lean back slightly and lift your feet off the ground, balancing on your sit bones. Hold a weight or medicine ball in front of your chest and twist your torso to the right, tapping the weight on the ground next to your hip. Twist back to center, then repeat on the left side. Do 2 sets of 10-12 reps on each side.
-
-# 5. Reverse crunches: Lie on your back with your hands at your sides and your legs straight up in the air, perpendicular to the ground. Use your lower abs to lift your hips off the ground, rolling your legs towards your head. Pause briefly at the top, then slowly lower back down. Do 2 sets of 10-12 reps.
-
-# 6 .Cool down: Finish with some light stretching for your abs and back.",
-#   image_url: "https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHNxdWF0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-#   video_url: "https://www.youtube.com/watch?v=jDwoBqPH0jk",
-# # )
-
-# WorkoutExercise.create(workout_id: 5, exercise_id: 6, reps: 0)
+WorkoutExercise.create!([
+  { workout_id: 1, exercise_id: 1, reps: 10 },
+  { workout_id: 1, exercise_id: 2, reps: 10 },
+  { workout_id: 1, exercise_id: 3, reps: 10 },
+  { workout_id: 2, exercise_id: 5, reps: 10 },
+  { workout_id: 5, exercise_id: 4, reps: 0 },
+  { workout_id: 3, exercise_id: 7, reps: 10 },
+  { workout_id: 5, exercise_id: 6, reps: 0 },
+])

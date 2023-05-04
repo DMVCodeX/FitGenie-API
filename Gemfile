@@ -76,4 +76,4 @@ end
 
 gem 'rack-cors'
 
-#gem update
+gem 'seed_dump'
